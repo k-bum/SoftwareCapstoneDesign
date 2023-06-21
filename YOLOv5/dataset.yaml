@@ -1,0 +1,6 @@
+names: ['bicycle', 'bus', 'car', 'motorcycle', 'pedestrian', 'rider',  'traffic light', 'traffic sign', 'train', 'truck']
+
+nc: 10
+train: /content/drive/MyDrive/Colab Notebooks/SW_Capstone/dataset/train/images
+val: /content/drive/MyDrive/Colab Notebooks/SW_Capstone/dataset/val/images
+test: /content/drive/MyDrive/Colab Notebooks/SW_Capstone/dataset/test
