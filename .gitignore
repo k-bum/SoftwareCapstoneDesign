@@ -110,3 +110,4 @@ output/B/
 .DS_Store
 *.zip
 *.jpg
+*.out
