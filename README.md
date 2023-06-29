@@ -107,13 +107,9 @@ input/output : RGB 3 channel image(512 * 512)
 
 batch size = 8(36728 daytime images, 27971 night images), training epoch = 200
 
-![Untitled](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/4b7cbe1c-63c3-4a54-b0f7-8608af77e38b)
+![Untitled](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/4b7cbe1c-63c3-4a54-b0f7-8608af77e38b)![Untitled 1](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c61eda92-9bbd-43e2-9486-95c358e2e1f2)
 
-![Untitled 1](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c61eda92-9bbd-43e2-9486-95c358e2e1f2)
-
-![Untitled 2](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/39695beb-0fb5-4616-a3ba-86611ed0c48c)
-
-![Untitled 3](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c6044220-297f-49aa-99f2-49c63c939459)
+![Untitled 2](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/39695beb-0fb5-4616-a3ba-86611ed0c48c)![Untitled 3](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c6044220-297f-49aa-99f2-49c63c939459)
 
 ## Detection result(YOLOv5)
 
