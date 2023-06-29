@@ -122,9 +122,8 @@ epoch = 300, batch_size = 16, image_size = 512 * 512, early stopping 설정(mAP 
 
 test_dataset : night images(2000장)
 
-![Untitled 4](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/29215064-c914-46c8-bfbe-3644844b9efc)
-
-![Untitled 5](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/eace32e1-b12f-4856-9ec2-5b2582679b9d)
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/29215064-c914-46c8-bfbe-3644844b9efc" width="500" height="500"/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/eace32e1-b12f-4856-9ec2-5b2582679b9d" width="500" height="500"/><br/>
 
 1. daytime images 
 
