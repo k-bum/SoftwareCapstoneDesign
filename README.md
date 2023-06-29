@@ -107,13 +107,13 @@ input/output : RGB 3 channel image(512 * 512)
 
 batch size = 8(36728 daytime images, 27971 night images), training epoch = 200
 
-![Untitled](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled.jpeg)
+![Untitled](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/4b7cbe1c-63c3-4a54-b0f7-8608af77e38b)
 
-![Untitled](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled%201.jpeg)
+![Untitled 1](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c61eda92-9bbd-43e2-9486-95c358e2e1f2)
 
-![Untitled](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled%202.jpeg)
+![Untitled 2](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/39695beb-0fb5-4616-a3ba-86611ed0c48c)
 
-![Untitled](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled%203.jpeg)
+![Untitled 3](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c6044220-297f-49aa-99f2-49c63c939459)
 
 ## Detection result(YOLOv5)
 
@@ -125,24 +125,24 @@ epoch = 300, batch_size = 16, image_size = 512 * 512, early stopping 설정(mAP 
 
 test_dataset : night images(2000장)
 
-![Untitled](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled%204.jpeg)
+![Untitled 4](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/29215064-c914-46c8-bfbe-3644844b9efc)
 
-![Untitled](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled%205.jpeg)
+![Untitled 5](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/eace32e1-b12f-4856-9ec2-5b2582679b9d)
 
 1. daytime images 
 
-![bicycle : 0, bus : 1, car : 2, motorcycle : 3, pedestrian : 4, rider : 5 , traffic light : 6, traffic sign : 7, train : 8, truck : 9](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled.png)
+![Untitled](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/1e0ac831-a6a1-4107-be10-c735db5f908a)
 
 bicycle : 0, bus : 1, car : 2, motorcycle : 3, pedestrian : 4, rider : 5 , traffic light : 6, traffic sign : 7, train : 8, truck : 9
 
-1. daytime images + night images 
+2. daytime images + night images 
 
-![bicycle : 0, bus : 1, car : 2, motorcycle : 3, pedestrian : 4, rider : 5 , traffic light : 6, traffic sign : 7, train : 8, truck : 9](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled%201.png)
+![Untitled 1](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/90466229-e69a-4456-ba54-68be6e8301c6)
 
 bicycle : 0, bus : 1, car : 2, motorcycle : 3, pedestrian : 4, rider : 5 , traffic light : 6, traffic sign : 7, train : 8, truck : 9
 
-1. translated images(daytime images + night images)
+3. translated images(daytime images + night images)
 
-![bicycle : 0, bus : 1, car : 2, motorcycle : 3, pedestrian : 4, rider : 5 , traffic light : 6, traffic sign : 7, train : 8, truck : 9](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/Untitled%202.png)
+![Untitled 2](https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/b3451aaa-3deb-4352-9ebd-d162c5ff726b)
 
 bicycle : 0, bus : 1, car : 2, motorcycle : 3, pedestrian : 4, rider : 5 , traffic light : 6, traffic sign : 7, train : 8, truck : 9
