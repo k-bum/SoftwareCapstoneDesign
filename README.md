@@ -16,10 +16,10 @@ Unpaired Image-to-Image Translation using Cycle-consistent adversarial networks(
 
 - 위와 동일하게 generator F에 대해서도 GAN loss가 정의
 
-cycle consistency loss :
+cycle consistency loss : </br>
 <img width="500" alt="b" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/6850839b-c47d-4adb-b9a2-05a8712eb8af">
 
-objective function :
+objective function : </br>
 <img width="500" alt="c" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/1f7b1ddd-44ba-499a-bdf6-3171f4d36346">
 - residual block을 활용, instance normalization 사용(generator architecture)
 - 이미지 내 패치 단위로 진위 여부를 판별하는 판별자 사용(PatchGAN) - we use 70*70 patchGANs which aim to classify whether 70*70 overlapping image patches are real or fake → such a patch level discriminator architecture has fewer parameters than an full-image discriminator
