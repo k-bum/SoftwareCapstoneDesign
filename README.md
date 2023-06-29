@@ -109,8 +109,8 @@ batch size = 8(36728 daytime images, 27971 night images), training epoch = 200<b
 <img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/4b7cbe1c-63c3-4a54-b0f7-8608af77e38b" width="500" height="500"/>
 <img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c61eda92-9bbd-43e2-9486-95c358e2e1f2" width="500" height="500"/><br/>
 
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/39695beb-0fb5-4616-a3ba-86611ed0c48c" width="512" height="512"/>
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c6044220-297f-49aa-99f2-49c63c939459" width="512" height="512"/><br/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/39695beb-0fb5-4616-a3ba-86611ed0c48c" width="500" height="500"/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c6044220-297f-49aa-99f2-49c63c939459" width="500" height="500"/><br/>
 
 ## Detection result(YOLOv5)
 
