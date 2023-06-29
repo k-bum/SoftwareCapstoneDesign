@@ -12,8 +12,7 @@ Unpaired Image-to-Image Translation using Cycle-consistent adversarial networks(
 - cycle-consistency loss : 생성자(G(x))가 다시 원본 이미지(x)로 구성할 수 있도록 translation → 2개의 generator 사용(G, F : G and F should be inverses of each other)
 - 2개의 판별자 사용 : Dx aims to distinguish between images {x} and translated images {F(y)}. Dy aims to distinguish between images {y} and translated images {G(x)}.
 - 2개의 loss : adversarial loss(1), cycle consistency loss(2)
-
-![스크린샷 2023-03-17 시간: 12.15.45.png](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-03-17_%25E1%2584%2589%25E1%2585%25B5%25E1%2584%2580%25E1%2585%25A1%25E1%2586%25AB_12.15.45.png)
+<img width="439" alt="a" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/14da5774-9bdc-428d-97f6-585fdbb8b3d4">
 
 - 위와 동일하게 generator F에 대해서도 GAN loss가 정의
 
