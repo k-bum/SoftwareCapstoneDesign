@@ -12,23 +12,19 @@ Unpaired Image-to-Image Translation using Cycle-consistent adversarial networks(
 - cycle-consistency loss : 생성자(G(x))가 다시 원본 이미지(x)로 구성할 수 있도록 translation → 2개의 generator 사용(G, F : G and F should be inverses of each other)
 - 2개의 판별자 사용 : Dx aims to distinguish between images {x} and translated images {F(y)}. Dy aims to distinguish between images {y} and translated images {G(x)}.
 - 2개의 loss : adversarial loss(1), cycle consistency loss(2)
-<img width="439" alt="a" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/14da5774-9bdc-428d-97f6-585fdbb8b3d4">
+<img width="500" alt="a" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/14da5774-9bdc-428d-97f6-585fdbb8b3d4">
 
 - 위와 동일하게 generator F에 대해서도 GAN loss가 정의
 
 cycle consistency loss :
-
-![스크린샷 2023-03-17 시간: 12.16.07.png](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-03-17_%25E1%2584%2589%25E1%2585%25B5%25E1%2584%2580%25E1%2585%25A1%25E1%2586%25AB_12.16.07.png)
+<img width="500" alt="b" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/6850839b-c47d-4adb-b9a2-05a8712eb8af">
 
 objective function :
-
-![스크린샷 2023-03-17 시간: 12.19.41.png](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-03-17_%25E1%2584%2589%25E1%2585%25B5%25E1%2584%2580%25E1%2585%25A1%25E1%2586%25AB_12.19.41.png)
-
+<img width="500" alt="c" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/1f7b1ddd-44ba-499a-bdf6-3171f4d36346">
 - residual block을 활용, instance normalization 사용(generator architecture)
 - 이미지 내 패치 단위로 진위 여부를 판별하는 판별자 사용(PatchGAN) - we use 70*70 patchGANs which aim to classify whether 70*70 overlapping image patches are real or fake → such a patch level discriminator architecture has fewer parameters than an full-image discriminator
 - cross entropy loss에 비해 학습이 안정화되고(gradient vanishing) , 실제 이미지의 분포와 가까운 이미지를 생성하기 위해 MSE 기반의 loss 사용 -  we replace the negative log likelihood objective by a least square loss
-
-![스크린샷 2023-03-24 시간: 14.05.53.png](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-03-24_%25E1%2584%2589%25E1%2585%25B5%25E1%2584%2580%25E1%2585%25A1%25E1%2586%25AB_14.05.53.png)
+<img width="500" alt="d" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/36e83223-18a6-4e79-be47-e9bb1f86e401">
 
 - Replay buffer : 생성자가 만든 이전의 50개의 이미지를 저장해 두고, 이를 활용해 판별자를 업데이트 - To reduce model oscillation, we update Dx and Dy using a history of generated images(we keep an image buffer that stores the 50 previously generated images)
 - Identity loss : 색상 구성을 보존해야 할 때 사용 가능(그림을 사진으로 변경할 때와 같이 색상 정보가 유지되어야 하는 task에서 유용하게 활용 가능)
@@ -59,7 +55,8 @@ validation set 중 daytime image : 5,258개
 
 validation set 중 night image : 3,929개
 
-![스크린샷 2023-03-23 시간: 21.18.26.png](Improving%20nighttime%20object%20detection%20using%20image-t%20be5d82e7e83e41a291f5bbc57c4c8302/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-03-23_%25E1%2584%2589%25E1%2585%25B5%25E1%2584%2580%25E1%2585%25A1%25E1%2586%25AB_21.18.26.png)
+<img width="783" alt="e" src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/7ec6822f-4477-4ad1-af39-1629624c852a">
+
 
 ## GPU setup
 
