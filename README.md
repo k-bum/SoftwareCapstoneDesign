@@ -106,11 +106,11 @@ srun --gres=gpu:1 --cpus-per-gpu=8 --mem-per-gpu=5G --partition debug_ugrad --pt
 input/output : RGB 3 channel image(512 * 512)
 
 batch size = 8(36728 daytime images, 27971 night images), training epoch = 200<br/>
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/4b7cbe1c-63c3-4a54-b0f7-8608af77e38b" width="500" height="500"/>
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c61eda92-9bbd-43e2-9486-95c358e2e1f2" width="500" height="500"/><br/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/4b7cbe1c-63c3-4a54-b0f7-8608af77e38b" width="300" height="300"/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c61eda92-9bbd-43e2-9486-95c358e2e1f2" width="300" height="300"/><br/>
 
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/39695beb-0fb5-4616-a3ba-86611ed0c48c" width="500" height="500"/>
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c6044220-297f-49aa-99f2-49c63c939459" width="500" height="500"/><br/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/39695beb-0fb5-4616-a3ba-86611ed0c48c" width="300" height="300"/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/c6044220-297f-49aa-99f2-49c63c939459" width="300" height="300"/><br/>
 
 ## Detection result(YOLOv5)
 
@@ -122,8 +122,8 @@ epoch = 300, batch_size = 16, image_size = 512 * 512, early stopping 설정(mAP 
 
 test_dataset : night images(2000장)
 
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/29215064-c914-46c8-bfbe-3644844b9efc" width="500" height="500"/>
-<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/eace32e1-b12f-4856-9ec2-5b2582679b9d" width="500" height="500"/><br/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/29215064-c914-46c8-bfbe-3644844b9efc" width="300" height="300"/>
+<img src="https://github.com/k-bum/SoftwareCapstoneDesign/assets/96854885/eace32e1-b12f-4856-9ec2-5b2582679b9d" width="300" height="300"/><br/>
 
 1. daytime images 
 
